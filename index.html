@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang='pt-br'>
+    <head>
+        <title>Teclado Virtual Simples</title>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel='stylesheet' href='estiloGeral.css'>
+        <link rel='stylesheet' href='estiloDispositivosMoveis.css'>
+    </head>
+    <body>
+        <div id='container'>
+            <noscript>
+                <p>O JavaScript está desativado no seu navegador. Ative-o para que o teclado funcione.</p>
+            </noscript>
+            <div class='subcontainer'>
+                <input type='text' id='visualizacao_entrada' placeholder='...'>
+            </div>
+            <div class='subcontainer' id='area_teclado'>
+                <div id='teclado'>
+                    <div id='interior_teclado'>
+                        <div class='linha'>
+                            <div class='tecla tecla_numero'>
+                                <span class='tecla_caractere'>1</span>
+                            </div>
+                            <div class='tecla tecla_numero'>
+                                <span class='tecla_caractere'>2</span>
+                            </div>
+                            <div class='tecla tecla_numero'>
+                                <span class='tecla_caractere'>3</span>
+                            </div>
+                            <div class='tecla tecla_numero'>
+                                <span class='tecla_caractere'>4</span>
+                            </div>
+                            <div class='tecla tecla_numero'>
+                                <span class='tecla_caractere'>5</span>
+                            </div>
+                            <div class='tecla tecla_numero'>
+                                <span class='tecla_caractere'>6</span>
+                            </div>
+                            <div class='tecla tecla_numero'>
+                                <span class='tecla_caractere'>7</span>
+                            </div>
+                            <div class='tecla tecla_numero'>
+                                <span class='tecla_caractere'>8</span>
+                            </div>
+                            <div class='tecla tecla_numero'>
+                                <span class='tecla_caractere'>9</span>
+                            </div>
+                            <div class='tecla tecla_numero'>
+                                <span class='tecla_caractere'>0</span>
+                            </div>
+                            <div class='tecla tecla_menos'>
+                                <span class='tecla_caractere'>-</span>
+                            </div>
+                            <div class='tecla tecla_mais'>
+                                <span class='tecla_caractere'>+</span>
+                            </div>
+                            <div class='tecla tecla_igual'>
+                                <span class='tecla_caractere'>=</span>
+                            </div>
+                            <div class='tecla' id='tecla_retrocesso'>
+                                <span id='retrocesso'></span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class='linha'>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>Q</span>
+                            </div>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>W</span>
+                            </div>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>E</span>
+                            </div>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>R</span>
+                            </div>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>T</span>
+                            </div>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>Y</span>
+                            </div>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>U</span>
+                            </div>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>I</span>
+                            </div>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>O</span>
+                            </div>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>P</span>
+                            </div>
+                        </div>
+                        <div class='linha'>
+                            <div class='tecla' id='tecla_caps_lock'>
+                                <span id='caps_lock'>Caps Lock</span>
+                                <span id='caps_lock_status'></span>
+                            </div> <br>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>A</span>
+                            </div>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>S</span>
+                            </div>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>D</span>
+                            </div>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>F</span>
+                            </div>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>G</span>
+                            </div>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>H</span>
+                            </div>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>J</span>
+                            </div>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>K</span>
+                            </div>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>L</span>
+                            </div>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>Ç</span>
+                            </div>
+                        </div>
+                        <div class='linha'>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>Z</span>
+                            </div>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>X</span>
+                            </div>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>C</span>
+                            </div>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>V</span>
+                            </div>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>B</span>
+                            </div>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>N</span>
+                            </div>
+                            <div class='tecla tecla_letra'>
+                                <span class='tecla_caractere'>M</span>
+                            </div>
+                        </div>
+                        <div class='linha'>
+                            <div class='tecla' id='tecla_entrada'>
+                                <span id='entrada'></span>
+                            </div>
+                        </div>
+                        <div class='linha'>
+                            <div class='tecla tecla_pontuacao'>
+                                <span class='tecla_caractere'>.</span>
+                            </div>
+                            <div class='tecla tecla_pontuacao'>
+                                <span class='tecla_caractere'>,</span>
+                            </div>
+                            <div class='tecla tecla_pontuacao'>
+                                <span class='tecla_caractere'>;</span>
+                            </div>
+                            <div class='tecla tecla_pontuacao'>
+                                <span class='tecla_caractere'>?</span>
+                            </div>
+                            <div class='tecla tecla_pontuacao'>
+                                <span class='tecla_caractere'>!</span>
+                            </div>
+                            <div class='tecla tecla_pontuacao'>
+                                <span class='tecla_caractere'>:</span>
+                            </div>
+                            <div class='tecla tecla_pontuacao'>
+                                <span class='tecla_caractere'>'</span>
+                            </div>
+                        </div>
+                        <div class='linha'>
+                            <div class='tecla' id='tecla_espaco'>
+                                <span id='espaco'></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src='funcionalidades.js'></script>
+    </body>
+</html>

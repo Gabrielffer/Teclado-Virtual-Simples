@@ -1,0 +1,43 @@
+
+@media screen and (min-width : 320px) and (max-width : 426px){
+
+    #container{
+        width : 100%;
+
+    }
+
+    .subcontainer{
+        width  : 100%;
+        margin : 20px auto;
+    }
+
+    .tecla{
+        width : 15%;
+    }
+
+    #tecla_retrocesso, #tecla_entrada{
+        width : 50%;
+    }
+
+    #tecla_caps_lock{
+        margin-bottom : 20px;
+    }
+
+    br{
+        display : block;
+    }
+
+}
+
+@media screen and (width : 768px){
+
+    #container{
+        width : 90%;
+    }
+
+    .subcontainer{
+        width  : 100%;
+        margin : 20px auto;
+    }
+
+}

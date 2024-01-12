@@ -1,0 +1,156 @@
+
+body{
+    color            : white;
+    background-color : black;
+}
+
+#container{
+    width  : 90%;
+    margin : auto;
+}
+
+noscript{
+    width            : 50%;
+    border           : solid 1px #D84315;
+    margin           : auto;
+    padding          : 5px;
+    display          : block;
+    text-align       : center;
+    background-color : #C62828;
+}
+
+.subcontainer{
+    width  : 70%;
+    margin : 20px auto;
+}
+
+#visualizacao_entrada{
+    color            : white;
+    width            : 100%;
+    border           : solid 2px #512DA8;
+    height           : 50px;
+    padding          : 5px 0px 5px 0px;
+    outline          : none;
+    font-size        : 2em;
+    background-color : #37474F;
+}
+
+#visualizacao_entrada:focus{
+    border-color : #7B1FA2;
+}
+
+#teclado{
+    width         : 100%;
+    padding       : 20px 0px 20px 0px;
+    box-shadow    : 2px 5px 10px #512DA8;
+    user-select   : none;
+    border-radius : 3px;
+}
+
+.linha{
+    text-align : center;
+    margin-top : 20px;
+}
+
+.tecla{
+    width          : 5%;
+    height         : 40px;
+    border         : 1px solid #263238;
+    cursor         : pointer;
+    margin         : 2px;
+    display        : inline-block;
+    text-align     : center;
+    line-height    : 40px;
+    vertical-align : middle;
+}
+
+.tecla:hover{
+    border-color : #546E7A;
+}
+
+.tecla:active, #tecla_espaco:active{
+    transform : scale(0.96);
+}
+
+#tecla_retrocesso:active, #tecla_retrocesso:active > #retrocesso{
+    border-color : #F44336;
+}
+
+#tecla_retrocesso{
+    width : 10%;
+}
+
+#retrocesso, #entrada{
+    width        : 10px;
+    height       : 10px;
+    border       : solid white;
+    display      : inline-block;
+    transform    : rotate(135deg);
+    border-width : 0px 3px 3px 0px;
+}
+
+hr{
+    width        : 80%;
+    height       : 0px;
+    margin-top   : 20px;
+    border-color : #512DA8;
+}
+
+#tecla_caps_lock{
+    width   : unset;
+    padding : 0px 30px 0 10px;
+}
+
+#caps_lock_status{
+    width            : 10px;
+    height           : 10px;
+    border           : 1px solid #263238;
+    display          : inline-block;
+    border-radius    : 100%;
+    vertical-align   : middle;
+    background-color : #4CAF50;
+}
+
+br{
+    display : none;
+}
+
+#tecla_entrada{
+    width : 20%;
+}
+
+#tecla_entrada:active, #tecla_entrada:active > #entrada{
+    border-color : #03A9F4;
+}
+
+#entrada{
+    transform : rotate(-135deg);
+}
+
+#tecla_espaco{
+    width : 60%;
+}
+
+#tecla_espaco:active, #tecla_espaco:active > #espaco{
+    border-color : #FF5722;
+}
+
+#espaco{
+    width      : 15%;
+    height     : 10px;
+    border     : solid 1px white;
+    display    : inline-block;
+    border-top : unset;
+}
+
+@keyframes piscar{
+
+    0%{
+        opacity : 1;
+    }
+
+    100%{
+        opacity : 0;
+    }
+
+}
